@@ -1,0 +1,290 @@
+:root {
+    /* для CTAs, Focused, Active states, Links, nav-click */
+    --primary-brand-color: #4D5AE5;
+    /* для Overlays, Shadows, Headings, nav-default*/
+    --dark-color: #2E2F42;
+    /* для Valid fields, Success messages */
+    --success-color: #31D0AA;
+    /* для Body text, nav-hover */
+    --text-color: #434455;
+    /* для Helper text, Deemphasized text */
+    --subtle-text-color: #8E8F99;
+    /* для Accent color, Hairlines, Subtle backgrounds*/
+    --accent-color: #E7E9FC;
+    /* для Light mode backgrounds, Light mode Dialogs/alerts*/
+    --light-color: #F4F4FD;
+
+    /*NAV-LINKS*/
+    /* для nav-default*/
+    --nav-defauit: #2E2F42;
+    /* для nav-hover*/
+    --nav-hover: #434455;
+    /* для nav-click*/
+    --nav-click: #4D5AE5;
+
+    /*BUTTONS*/
+    /*для всех button*/
+    --button-padding: 8px, 16px, 8px, 16px;
+    /* для button-default*/
+    --button-defauit: #4D5AE5;
+    /* для button-hover*/
+    --button-hover: #4D5AE5;
+    /* для button-click*/
+    --button-click: #404BBF;
+}
+
+body { 
+    font-family: Roboto, sans-serif;
+    background-color: #E5E5E5;
+}
+
+
+                                  /*header*/
+
+/*LOGO*/                            
+.logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    align-items: center;
+    color: var(--primary-brand-color);
+    text-decoration-line: none;
+    display:inline-flex;
+}
+
+.logo span {
+    color: var(--dark-color);
+}
+
+/*NAV*/
+.nav {
+    list-style-type: none;
+    display:inline-flex;
+}
+
+.header-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;        
+    letter-spacing: 0.02em;
+    color: var(--nav-defauit);
+    text-decoration-line: none;
+    list-style-type: none;
+    display:inline-flex;
+}
+
+.header-link:hover {
+    color: var(--nav-hover);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--text-color);
+}
+
+.header-link:active {
+    color: var(--nav-click);
+}
+
+/*ADDRESS*/
+
+.header-address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;        
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration-line: none;
+    list-style-type: none;
+    display:inline-flex;
+}
+
+.header-address:hover,
+.header-address:focus {
+    color: var(--primary-brand-color);
+
+}
+
+                                  /*main*/
+/*section order-service*/
+.section-order-service {
+    width: 1440px;
+    height: 603px;
+    left: 0px;
+    top: 72px;
+    background-color: var(--dark-color);
+}
+
+.section-order-service h1 {   
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    width: 492px;
+    height: 120px;
+    padding: 264, 0, 0, 474;
+
+}
+
+.button-primary {
+    background-color: var(--button-defauit);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 635;
+    height: 432;
+    border-width: 635;
+    font-size: 1l6px;
+    line-height: 1.188;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    margin: auto;
+    gap: 10px; 
+}
+
+.button-primary:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.button-primary:active {
+    background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+/*sections*/
+.features h2,
+.what-are-we-doing h2 
+.our-team h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize
+    }
+
+.features-links,
+.what-are-we-doing-links, 
+.our-team-links {
+    list-style-type: none;
+    display:inline-flex;
+}
+
+.our-team h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+    text-decoration-line: none;
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.features p,
+.our-team p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+                                /*css-особенности для страницы portfolio.html*/
+
+/*buttons*/
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 116px;
+    height: 48px;
+    background: var(--light-color);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: var(--button-defauit);
+}
+                        
+.button:current {
+    background-color: var(--button-hover);
+    color: #FFFFFF
+}
+                        
+.button:hover {
+    background-color: var(--button-hover);
+    color: #FFFFFF
+}
+                        
+.button:focus {
+    background-color: var(--button-hover);
+    color: #FFFFFF
+}
+
+
+.portfolio-photo {
+    display: inline-flexbox;
+}
+
+.portfolio-filter {
+    text-decoration-line: none;
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.portfolio-links {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.portfolio-link {
+    text-decoration-line: none;
+}
+
+/*только для заголовков h2 со страницы portfolio.html*/
+.portfolio-links h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+    }   
+
+                                    /*footer*/
+.footer {
+    width: 1440px;
+    height: 310px;
+    left: 0px;
+    top: 2283px;
+    background-color: var(--dark-color);
+}
+
+.footer .logo span {
+    color: var(--light-color);
+}
+                         
+.footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
