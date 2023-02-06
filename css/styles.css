@@ -25,12 +25,12 @@
     /*BUTTONS*/
     /*для всех button*/
     --button-padding: 8px, 16px, 8px, 16px;
-    /* для button-default*/
-    --button-defauit: #4D5AE5;
-    /* для button-hover*/
-    --button-hover: #4D5AE5;
-    /* для button-click*/
-    --button-click: #404BBF;
+    /* для button--order-default*/
+    --button-order-defauit: #4D5AE5;
+    /* для button--order-hover*/
+    --button-order-hover: #4D5AE5;
+    /* для button--order-click*/
+    --button-order-click: #404BBF;
 }
 
 body { 
@@ -126,8 +126,8 @@ body {
     color: #ffffff;
 }
 
-.button-primary {
-    background-color: var(--button-defauit);
+.button-order {
+    background-color: var(--button-order-defauit);
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -149,11 +149,11 @@ body {
     top: 432px;
 }
 
-.button-primary:hover {
+.button-order:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.button-primary:active {
+.button-order:active {
     background: #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -228,21 +228,21 @@ body {
     text-align: center;
     letter-spacing: 0.04em;
     cursor: pointer;
-    color: var(--button-defauit);
+    color: var(--button-order-defauit);
 }
                         
 .filter-button:current {
-    background-color: var(--button-hover);
+    background-color: var(--button-order-hover);
     color: #FFFFFF
 }
                         
 .filter-button:hover {
-    background-color: var(--button-hover);
+    background-color: var(--button-order-hover);
     color: #FFFFFF
 }
                         
 .filter-button:focus {
-    background-color: var(--button-hover);
+    background-color: var(--button-order-hover);
     color: #FFFFFF
 }
 
