@@ -23,19 +23,20 @@
     --nav-click: #4D5AE5;
 
     /*BUTTONS*/
-    /*для всех button*/
-    --button-padding: 8px, 16px, 8px, 16px;
     /* для button--order-default*/
     --button-order-defauit: #4D5AE5;
     /* для button--order-hover*/
     --button-order-hover: #4D5AE5;
     /* для button--order-click*/
     --button-order-click: #404BBF;
+
+    /*background-color-body*/
+    --background-color: #ffffff
 }
 
 body { 
     font-family: Roboto, sans-serif;
-    background-color: #E5E5E5;
+    background-color: var(--background-color);
 }
 
 
@@ -49,20 +50,17 @@ body {
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    align-items: center;
     color: var(--primary-brand-color);
-    text-decoration-line: none;
-    display:inline-flex;
+    text-decoration: none;
 }
 
-.logo span {
+.studio {
     color: var(--dark-color);
 }
 
 /*NAV*/
 .nav {
     list-style-type: none;
-    display:inline-flex;
 }
 
 .header-link {
@@ -71,9 +69,7 @@ body {
     line-height: 1.5;        
     letter-spacing: 0.02em;
     color: var(--nav-defauit);
-    text-decoration-line: none;
-    list-style-type: none;
-    display:inline-flex;
+    text-decoration: none;
 }
 
 .header-link:hover {
@@ -92,14 +88,14 @@ body {
 /*ADDRESS*/
 
 .header-address {
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;        
     letter-spacing: 0.02em;
     color: var(--text-color);
-    text-decoration-line: none;
+    text-decoration: none;
     list-style-type: none;
-    display:inline-flex;
 }
 
 .header-address:hover,
@@ -111,10 +107,6 @@ body {
                                   /*main*/
 /*section order-service*/
 .section-order-service {
-    width: 1440px;
-    height: 603px;
-    left: 0px;
-    top: 72px;
     background-color: var(--dark-color);
 }
 
@@ -123,47 +115,30 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: var(--background-color);
 }
 
 .button-order {
     background-color: var(--button-order-defauit);
     cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0px;
     border-radius: 4px;
     font-size: 16px;
     line-height: 1.188;
     text-align: center;
-    align-items: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    padding: 16px 28px;
-    margin: auto;
-    gap: 10px; 
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 170px;
-    height: 51px;
-    left: 635px;
-    top: 432px;
+    color: var(--background-color);
 }
 
-        /*хоть я и считаю оформление "hover" для данной кнопки ошибкой в дизайне, 
-        т.к. по информации в сайдбаре слева у кнопки 3 состояния, и цвет изменяется 
-        лишь при клике. Теперь получается, что у кнопки "отобрали" состояние "active*.
-        Могу придумать его сам, но это будет расходиться с техническим заданием...*/
 .button-order:hover {
-    position: absolute;
     background-color: #404BBF;
 }
 
-.button-order:active {
-    position: absolute;
+/*.button-order:active {
     background-color: #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-}
+}*/
 
 
 /*sections*/
@@ -182,7 +157,6 @@ body {
 .what-are-we-doing-links, 
 .our-team-links {
     list-style-type: none;
-    display:inline-flex;
     text-decoration-line: none;
 }
 
@@ -196,14 +170,17 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color);
-    text-decoration-line: none;
+    text-decoration: none;
     list-style-type: none;
-    display: inline-flex;
+}
+ 
+.our-team {
+    background-color: var(--light-color);
 }
 
-.features p,
-.our-team p, 
-.portfolio-links p {
+.features .text,
+.our-team .text, 
+.portfolio-links .text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -214,8 +191,6 @@ body {
 
 /*.filter-buttons*/
 .filter-button {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
@@ -230,8 +205,6 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     cursor: pointer;
@@ -254,9 +227,9 @@ body {
 }
 
 
-.portfolio-photo {
+/*.portfolio-photo {
     display: inline-flex;
-}
+}*/
 
 .portfolio-filter {
     text-decoration-line: none;
@@ -269,7 +242,7 @@ body {
 }
 
 .portfolio-link {
-    text-decoration-line: none;
+    text-decoration: none;
 }
 
 .portfolio-link:hover,
@@ -289,8 +262,6 @@ body {
 
                                     /*footer*/
 .footer {
-    width: 1440px;
-    height: 310px;
     left: 0px;
     top: 2283px;
     background-color: var(--dark-color);
@@ -302,7 +273,7 @@ body {
 
 }
                          
-.footer p {
+.footer .text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
