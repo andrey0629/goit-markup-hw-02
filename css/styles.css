@@ -124,8 +124,6 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
-    width: 492px;
-    height: 120px;
 }
 
 .button-primary {
@@ -141,6 +139,14 @@ body {
     padding: 16px 32px;
     margin: auto;
     gap: 10px; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 170px;
+    height: 51px;
+    left: 635px;
+    top: 432px;
 }
 
 .button-primary:hover {
@@ -155,7 +161,7 @@ body {
 
 /*sections*/
 .features h2,
-.what-are-we-doing h2 
+.what-are-we-doing h2, 
 .our-team h2 {
     font-weight: 600;
     font-size: 36px;
