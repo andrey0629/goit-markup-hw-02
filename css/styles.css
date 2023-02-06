@@ -133,15 +133,15 @@ body {
     border-radius: 4px;
     font-size: 16px;
     line-height: 1.188;
+    text-align: center;
     align-items: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    padding: 16px 32px;
+    padding: 16px 28px;
     margin: auto;
     gap: 10px; 
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     position: absolute;
     width: 170px;
     height: 51px;
