@@ -176,6 +176,11 @@ body {
 .our-team-links {
     list-style-type: none;
     display:inline-flex;
+    text-decoration-line: none;
+}
+
+.our-team-link {
+    text-decoration-line: none;
 }
 
 .our-team h3 {
@@ -200,8 +205,8 @@ body {
 
                                 /*css-особенности для страницы portfolio.html*/
 
-/*buttons*/
-.button {
+/*.filter-buttons*/
+.filter-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -226,17 +231,17 @@ body {
     color: var(--button-defauit);
 }
                         
-.button:current {
+.filter-button:current {
     background-color: var(--button-hover);
     color: #FFFFFF
 }
                         
-.button:hover {
+.filter-button:hover {
     background-color: var(--button-hover);
     color: #FFFFFF
 }
                         
-.button:focus {
+.filter-button:focus {
     background-color: var(--button-hover);
     color: #FFFFFF
 }
@@ -254,7 +259,7 @@ body {
 
 .portfolio-links {
     list-style-type: none;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .portfolio-link {
