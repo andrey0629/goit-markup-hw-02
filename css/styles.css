@@ -155,9 +155,11 @@ body {
 
 .features-links,
 .what-are-we-doing-links, 
-.our-team-links {
+.our-team-links,
+.portfolio-link {
     list-style-type: none;
     text-decoration-line: none;
+    background-color: var(--background-color);
 }
 
 .our-team-link {
