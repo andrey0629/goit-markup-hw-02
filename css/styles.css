@@ -110,7 +110,7 @@ body {
     background-color: var(--dark-color);
 }
 
-.section-order-service h1 {   
+.order-titel {   
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -142,16 +142,14 @@ body {
 
 
 /*sections*/
-.features h2,
-.what-are-we-doing h2, 
-.our-team h2 {
+.section-titel {
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize
-    }
+}
 
 .features-links,
 .what-are-we-doing-links, 
@@ -170,7 +168,7 @@ body {
     background-color: var(--background-color);
 }
 
-.our-team h3 {
+.our-team-name {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -183,7 +181,7 @@ body {
 .our-team {
     background-color: var(--light-color);
 }
-
+/*для всех тегов <p>, кроме белого в футере*/
 .features .text,
 .our-team .text, 
 .portfolio-links .text {
@@ -258,7 +256,7 @@ body {
 }
 
 /*только для заголовков h2 со страницы portfolio.html*/
-.portfolio-links h2 {
+.portfolio-card-titel {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -273,7 +271,7 @@ body {
     background-color: var(--dark-color);
 }
 
-.footer .logo span {
+.footer .studio {
     color: var(--light-color);
     line-height: 1.17;
 
