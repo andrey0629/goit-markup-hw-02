@@ -155,15 +155,19 @@ body {
 
 .features-links,
 .what-are-we-doing-links, 
-.our-team-links,
 .portfolio-link {
     list-style-type: none;
     text-decoration-line: none;
     background-color: var(--background-color);
 }
 
+.our-team-links {
+    list-style-type: none;
+}
+
 .our-team-link {
-    text-decoration-line: none;
+    text-decoration: none;
+    background-color: var(--background-color);
 }
 
 .our-team h3 {
