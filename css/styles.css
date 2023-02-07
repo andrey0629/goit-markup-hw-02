@@ -63,6 +63,10 @@ body {
     list-style-type: none;
 }
 
+.nav .header-link.current {
+    color: var(--nav-click);
+}
+
 .header-link {
     font-weight: 600;
     font-size: 16px;
